@@ -388,7 +388,7 @@ AppGenerator.prototype.requirejs = function requirejs() {
     this.mainJsFile = [
       'require.config({',
       '    paths: {',
-      '        jquery: \'../bower_components/jquery/jquery\'' + bootstrapPath,
+      '        jquery: \'../bower_components/jquery/dist/jquery\'' + bootstrapPath,
       '    shim: {',
       '        bootstrap: {',
       '            deps: [\'jquery\'],',
@@ -425,7 +425,7 @@ AppGenerator.prototype.writeIndex = function writeIndex() {
 
   if (!this.includeRequireJS) {
     this.indexFile = this.appendScripts(this.indexFile, 'scripts/main.js', [
-      'bower_components/jquery/jquery.js',
+      'bower_components/jquery/dist/jquery.js',
       'scripts/main.js'
     ]);
 
