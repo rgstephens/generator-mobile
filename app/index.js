@@ -458,7 +458,7 @@ AppGenerator.prototype.writeIndex = function writeIndex() {
     defaults.push('Topcoat');
   } else if(this.frameworkSelected == 'foundation') {
       this.indexFile = this.appendStyles(this.indexFile, 'bower_components/foundation/css/foundation.css', [
-        'bower_components/foundation/scss/foundation.css'
+        'bower_components/foundation/css/foundation.css'
       ]);
     defaults.push('Foundation');
   }
